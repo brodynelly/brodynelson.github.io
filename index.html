@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brody Nelson Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<meta name="author" content="Brody Nelson">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+				<a href="https://github.com/brodynelly" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>				
+			</div>
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#timeline">Timeline</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/profile.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					<b>Hello, Im Brody Nelson.</b> I'm a <b>Computer Science major</b> at the <b>University of Missouri</b>. I spend my day expanding my knowledge in Computer Science. 
+				</p>
+				<div class="intro-btns">
+					<a href="#projects" class="btn-blue"><i class="fa fa-linkedin"></i> Linked In</a>
+					<a href="https://github.com/ben04rogers" class="btn-blue-outline mx-1" id="projects-btn"
+					  target="_blank"><i class="fa fa-github"></i> Github</a>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="projects">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+
+				<div class="project-row">
+					<div class="project-left">
+						<img src="assets/img/project-1.jpg" alt="">
+					</div>
+					<div class="project-right"> 
+					
+						<h3><b>CryptoCrowd Sentiment Analysis</b></h3>
+
+					<p>Cryptocurrency sentiment analysis on Twitter posts. Users can see the overall sentiment (positive, negative or neutral) of different Cryptocurrencies based on tweets. Users can also view keywords and an average sentiment score. React frontend and Node.js backend. Stateless application that uses Elasticache and S3 on AWS for persistence. Application was setup with an autoscaling group to scale in and out as needed.</p>
+					</div>
+				</div>
+				
+				
+			</div>
+		</section>
+
+		<section id="timeline" class="section section-2">
+			<div class="has-text-centered">
+				<h3 class="title is-3">Timeline</h3>
+			</div>
+			<div class="timeline">
+				<div class="timeline-line"></div>
+				<div class="timeline-container left-container">
+					<div class="text-box">
+						<h3><b>Blue Springs South High School</b></h3>
+						<small>Aug. 2018 - June 2022</small>
+						<br /><br />
+						<p>Graduated with a GPA of 4.35, ranked 14th out of a class of 495 students. Graduated with 30 college credit hours and completed relevant coursework in areas such as computer science and mathematics. recipient of the BSSD Academic Honor Roll from 2018-2022 and a member of the National Society of High School Scholars</p>
+						<span class="left-container-arrow"></span>
+					</div>
+				</div>
+				<div class="timeline-container right-container">
+					<div class="text-box">
+						<h3><b>University of Missouri</b></h3>
+						<small>Aug. 2022 - Jun. 2026</small>
+						<br /><br />
+						<p>Computer Science-BS. Course Work: Object-orientated programming (Java), Algorithm Design/Programming (C), Data Structures (C), and Logic Systems. </p>
+						Recipient of the Curators Scholar Award.</p>
+						<span class="right-container-arrow"></span>
+					</div>
+				</div>
+				<div class="timeline-container left-container">
+					<div class="text-box">
+						<h3><b>University of Westminster</b></h3>
+						<small>Aug. 2023 - Jan. 2024</small>
+						<br /><br />
+						<p>Study Abroad course work in cognitive psychology. Expanded my perspective by exposing myself to diverse teaching methods, perspectives, and cultures</p>
+						<span class="left-container-arrow"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<p>Contact: brody2003@icloud.com</p>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
+</html>
