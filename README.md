@@ -1,4 +1,4 @@
-#My Portfolio
+<b>My Portfolio</b>
 Introduction
 Welcome to my portfolio! This project showcases my skills and projects in Computer Science. It's a reflection of my journey and accomplishments in the tech world.
 
