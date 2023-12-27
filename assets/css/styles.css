@@ -99,7 +99,7 @@ a.nav-item:hover {
 	background-color: #063647;
 	border: 2px solid rgba(7, 59, 79, 0.5);
 	display: flex;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
   }
   .projects .project-row .project-left {
 	width: 50%;
@@ -178,7 +178,7 @@ a.nav-item:hover {
 .timeline{
 	position: relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 50px auto;
 	align-items: center;
     
 }
@@ -187,6 +187,7 @@ a.nav-item:hover {
     position: relative;
     width: 50%;
     background:transparent;
+	display: flex; 
 }
 .text-box{
 	padding: 20px 30px;
@@ -207,7 +208,7 @@ a.nav-item:hover {
     background-color: #ffffff; /* Adjust the color as needed */
     position: absolute;
     left: 50%;  /*Position the line in the middle of the timeline */
-   /* transform: translateX(-52%); /* Center the line precisely */
+    transform: translateX(-52%); /* Center the line precisely */
 }
 .left-container-arrow{
 	height: 0; 
