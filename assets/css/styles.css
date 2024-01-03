@@ -91,9 +91,10 @@ a.nav-item:hover {
 }
 .projects h2,
 .projects h2 span {
-	text-align: center;
-	margin-bottom: 3rem;
+	
+	margin-top: 1rem;
 	font-weight: bold;
+	font-size: 20px;
 }
   .projects .project-row {
 	background-color: #063647;
@@ -123,6 +124,7 @@ a.nav-item:hover {
 	flex-wrap: wrap;
 	list-style-type: none;
 	margin-top: 1rem;
+	color: #ffffff82; 
   }
   .projects .project-row .project-right .tech-stack-list p {
 	margin-right: 1rem;
