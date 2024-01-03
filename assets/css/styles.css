@@ -278,6 +278,12 @@ a.nav-item:hover {
 	border: 2px solid #3b82f6;
   }
 
+  .btn-dark {
+	color: white;
+	background-color: #0a5967;
+	border: 2px solid #0a5967;
+  }
+
   .btn-blue-outline {
 	color: #3b82f6;
 	background-color: transparent;
