@@ -1,7 +1,8 @@
 html, body{
 	font-size:16px;
-	color: #dfdfdf;
-	background-color: #063647;
+	color: black;
+	background-color:#f9fafb;
+	color: rgba(7, 59, 79, 0.5);
 	line-height: 1.5; 
 	scroll-behavior: smooth;
 }
@@ -17,10 +18,11 @@ a:hover {
 section{
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	color: #f3f5f7;
 }
 
 .section-1 {
-	background: #063647;
+	background: #1f1e2d;
 }
 
 .section-2 {
@@ -33,7 +35,8 @@ section{
 }
 
 .section-4 {
-	background-color: #063647;
+	background-color: #f3f5f7;
+	color:black; 
 	padding: 0.2rem;
 }
 
@@ -42,6 +45,18 @@ section{
 	position: relative;
 	max-width: 1200px; 
 	margin: 100px auto;
+}
+
+.section-6 {
+	background-color:#f3f5f7;
+	box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+	font-family:monospace;
+	color: white; 
+	position: relative;
+	border-radius: 20px;
+	max-width: 800px;
+	margin: 30px auto;
+	 
 }
 
 a.nav-item {
@@ -72,7 +87,7 @@ a.nav-item:hover {
   	margin-bottom: 3rem;
 	margin-left: 2rem; 
 	width: 100%;
-	border: 1px solid lightgray;
+	border: 1px solid #f9fafb;
 }
 
 .project-text {
@@ -85,29 +100,42 @@ a.nav-item:hover {
 }
 
 .projects {
-	background: #052D3D;
+	background: #f9fafb; 
 	padding: 3rem 0;
+	color: #616161; 
 	
 }
 .projects h2,
 .projects h2 span {
-	
 	margin-top: 1rem;
-	font-weight: bold;
-	font-size: 20px;
+	font-style: bold; 
+	font-size: 21px;
+	color: black
 }
   .projects .project-row {
-	background-color: #063647;
-	border: 2px solid rgba(7, 59, 79, 0.5);
+	background-color:#f3f5f7;
+	border: 1px solid #e5e7eb; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 20px; /* adjust the border radius as you like */
 	display: flex;
 	margin-bottom: 2rem;
   }
   .projects .project-row .project-left {
 	width: 50%;
-	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-right: 1rem; 
   }
   .projects .project-row .project-left img {
 	width: 100%;
+	border-radius: 20px; /* adjust the border radius as you like */
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	/*border: 1px solid lightgray;*/
+  }
+  .projects .project-row .project-right img {
+	width: 100%;
+	border-radius: 20px; /* adjust the border radius as you like */
+	border-radius: 20px; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 	/*border: 1px solid lightgray;*/
   }
   .projects .project-row .project-right {
@@ -121,10 +149,25 @@ a.nav-item:hover {
   }
   .projects .project-row .project-right .tech-stack-list {
 	display: flex;
+	
 	flex-wrap: wrap;
 	list-style-type: none;
 	margin-top: 1rem;
-	color: #ffffff82; 
+	color: #616161; 
+  }
+  .projects .project-row .project-left .tech-stack-list li {
+	margin-right: 20px;
+	font-size: 1.5rem;
+  }
+  .projects .project-row .project-left .tech-stack-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin-top: 1rem;
+	color: #616161; 
+  }
+  .projects .project-row .project-left .tech-stack-list p {
+	margin-right: 1rem;
   }
   .projects .project-row .project-right .tech-stack-list p {
 	margin-right: 1rem;
@@ -242,7 +285,7 @@ a.nav-item:hover {
 }
 
 .title {
-	color: #fff;
+	color: #000000;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 2rem;
@@ -265,11 +308,17 @@ a.nav-item:hover {
 	margin-top: 1rem;
 }
 
+.link-btns {
+	white-space: nowrap;
+	text-align: left;
+	margin-top: 1rem;
+}
+
 .btn-blue-outline, .btn-dark, .btn-blue, .btn {
 	display: inline-block;
 	padding: 0.8rem 1.5rem;
 	transition: all .3s;
-	border-radius: 3px;
+	border-radius: 1px;
 	border: none;
 	cursor: pointer;
   }
@@ -278,12 +327,22 @@ a.nav-item:hover {
 	color: white;
 	background-color: #3b82f6;
 	border: 2px solid #3b82f6;
+
+	
   }
 
-  .btn-dark {
-	color: white;
-	background-color: #0a5967;
-	border: 2px solid #0a5967;
+  .btn-light {
+	
+	color: #8bb7ff;
+	background-color: transparent;
+	border: 1px solid #3b82f6;
+	border-radius: 20px; /* adjust the border radius as you like */
+
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	transition: all .3s;
+	margin-bottom: 1rem;
+
   }
 
   .btn-blue-outline {
@@ -292,25 +351,34 @@ a.nav-item:hover {
 	border: 2px solid #3b82f6;
   }
 
-.void-background {
-	background-color: transparent; 
+.solid-background {
+	background-color:#fff; 
 }
+/* Define the style of the console container */
+/* The typing effect */
+
+  
+
 
 @media screen and (max-width: 768px) {
 	.nav-menu {
-		background-color: #063647;
+		background-color: #f9fafb;
+		width: 100%;
 	}
 
 	.nav-toggle:hover {
 		background-color: transparent;
+		width: 100%;
 	}
 
 	.nav-toggle span {
-		background-color: #dfdfdf;
+		background-color: #f9fafb;
+		width: 100%;
 	}
 
 	.nav-toggle span:hover {
-		background-color: #fff;
+		background-color: #f9fafb;
+		width: 100%;
 	}
 
 }

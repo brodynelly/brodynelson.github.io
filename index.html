@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+
 
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<link rel="stylesheet" href="css/main.css" />
@@ -13,13 +15,16 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<meta name="author" content="Brody Nelson">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+
 </head>
 	<body>
 		<!-- Navbar -->
-		<nav class="nav container void-background">
+		<nav class="nav container solid-background" >
 			<!-- This "nav-menu" is hidden on mobile -->
 			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
+			<div class="nav-left" style="background-color: #f9fafb";>
 				<a href="https://github.com/brodynelly" class="nav-item">
 					<span class="icon">
 						<i class="fa fa-github"></i>
@@ -27,7 +32,7 @@
 				</a>				
 			</div>
 
-			<div class="nav-right nav-menu">
+			<div class="nav-right nav-menu" style="background-color: #f9fafb" >
 				<a class="nav-item" href="#about">About</a>
 				<a class="nav-item" href="#projects">Projects</a>
 				<a class="nav-item" href="#timeline">Timeline</a>
@@ -35,7 +40,7 @@
 
 			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
 			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
+			<span class="nav-toggle" >
 				<span></span>
 				<span></span>
 				<span></span>
@@ -43,20 +48,15 @@
 		</nav>
 				
 		<!-- About Me -->
-		<section id="about" class="section section-1">
-			<div class="container has-text-centered">
-				<!-- Source: https://flic.kr/p/pAZBNK -->
-			</div>
-			<div class="container"></br>
-				<p class="intro">
-					<b>Hello, Im Brody Nelson.</b> I'm a <b>Computer Science major</b> at the <b>University of Missouri</b>. I spend my day expanding my knowledge in Computer Science. 
-				</p>
-				<div class="intro-btns">
-					<a href="https://www.linkedin.com/in/brody-nelson-ab600027a/" class="btn-blue mx-1" id="linkedin-btn" 
-					target="_blank"><i class="fa fa-linkedin"></i> Linked In</a>
-					<a href="https://github.com/brodynelly" class="btn-blue-outline mx-1" id="projects-btn"
-					  target="_blank"><i class="fa fa-github"></i> Github</a>
-			</div>
+		
+		<section id="about" class="section section-6" >
+			<div id="typedtext" style="color:rgb(111, 111, 104)" style="border: 2px solid #e5e7eb" ></div>
+			
+			
+			
+
+			
+			
 		</section>
 		
 		<!-- Projects -->
@@ -67,12 +67,9 @@
 				</div>
 
 				<div class="project-row">
-					<div class="project-left">
-						<img class="float:right" src="assets/img/TRANSLATE.png" alt="">
-					</div>
-					<div class="project-right"> 
+					<div class="project-left"> 
 					
-						<h2><b>Article Translator</b></h2>
+						<h2>Article Translator</h2>
 
 						<div class="tech-stack-list">
 							<p><b>Made With:</b></p>
@@ -81,62 +78,67 @@
 							<li><span class="iconify" data-icon="skill-icons:html" data-inline="false"></span></li>
 							<li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span></li>
 						</div>
-
-
 						<p>This website is a personal project to learn Spanish by reading and translating articles with Google Translate API. It showcases my skills in using React, HTML, CSS, Node.js and npm to build a user-friendly website. It supports priority-driven selection, copying, sharing and listening of the translated text. It proves that I can use Node.js and npm to create a reliable and flexible back-end that manages the website’s communication, which requires knowledge of JavaScript, modules, packages, and dependencies.</p>
-						<div class="intro-btns">
-							<a href="https://brodynelly.github.io/admin/dashboard" class="btn-dark mx-1" id="projects-btn"
-					  		target="_blank"><i class="fa fa-link"></i> Website</a>
+						<div class="link-btns">
+							<a href="https://brodynelly.github.io/translation-website/" class="btn-light mx-1" id="projects-btn"
+					  		target="_blank"><i class="fa fa-link"></i> Live</a>
 						</div>
+					</div>
+					<div class="project-right">
+						<img src="assets/img/TRANSLATE.png" alt="" class="img">
 					</div>
 				</div>
 
+
+
 				<div class="project-row">
-					<div class="project-left">
-						<img src="assets/img/PQueue .png" alt="">
-					</div>
-					<div class="project-right"> 
+
+					<div class="project-left"> 
 					
-						<h2><b>Advanced Priority Queue Management in C</b></h2>
+						<h2>Advanced Priority Queue Management in C</h2>
 
 						<div class="tech-stack-list">
 							<p><b>Made With:</b></p>
 							<li><span class="iconify" data-icon="devicon:c" data-inline="false"></span></li>
 						</div>
-
-
 						<p>This project presents an advanced implementation of a Priority Queue in C, showcasing my skills in creating efficient, scalable data structures. It includes priority-based insertion, extraction, and dynamic resizing, emphasizing my ability in algorithmic optimization and memory management. This work highlights my proficiency in designing data structures that are fundamental to complex algorithmic solutions and system performance.</p>
-						<div class="intro-btns">
-							<a href="https://github.com/brodynelly/data-structure-basics/tree/main/PQueue%20funct/lab" class="btn-dark mx-1" id="projects-btn"
+						<div class="link-btns">
+							<a href="https://github.com/brodynelly/data-structure-basics/tree/main/PQueue%20funct/lab" class="btn-light mx-1" id="projects-btn"
 					  		target="_blank"><i class="fa fa-github"></i> Github</a>
 						</div>
 					</div>
+
+					<div class="project-right">
+						<img src="assets/img/PQueue .png" alt="" class="img">
+					</div>
+					
 					
 				</div>
 				<div class="project-row">
-					<div class="project-left">
-						<img src="assets/img/BST.png" alt="">
-					</div>
-					<div class="project-right"> 
+				
+					<div class="project-left"> 
 					
-						<h2><b>Optimized Binary Search Tree Implementation in C</b></h2>
+						<h2>Optimized Binary Search Tree Implementation in C</h2>
 						<div class="tech-stack-list">
 							<p><b>Made With:</b></p>
 							<li><span class="iconify" data-icon="devicon:c" data-inline="false"></span></li>
 						</div>
 
 						<p>This project features a robust implementation of a Binary Search Tree (BST) in C, highlighting my expertise in efficient data structures. It includes key functionalities like node insertion, deletion, and in-order traversal, demonstrating my proficiency in algorithm design and optimization. The project underscores my ability to handle complex data structures and balance performance with memory efficiency, crucial skills in software development and system design.</p>
-						<div class="intro-btns">
-							<a href="https://github.com/brodynelly/data-structure-basics/tree/main/binary%20search%20(BST)" class="btn-dark mx-1" id="projects-btn"
+						<div class="link-btns">
+							<a href="https://github.com/brodynelly/data-structure-basics/tree/main/binary%20search%20(BST)" class="btn-light mx-1" id="projects-btn"
 					  		target="_blank"><i class="fa fa-github"></i> Github</a>
 						</div>
 					</div>
-				</div>
-				<div class="project-row">
-					<div class="project-left">
-						<img src="assets/img/Linkedlist.png" alt="">
+					<div class="project-right">
+						<img src="assets/img/BST.png" alt="" class="img">
 					</div>
-					<div class="project-right"> 
+				</div>
+
+
+				<div class="project-row">
+					
+					<div class="project-left"> 
 					
 						<h2><b>Efficient Linked List Operations in C</b></h2>
 						<div class="tech-stack-list">
@@ -145,18 +147,20 @@
 						</div>
 
 						<p>In this project, I developed a range of advanced linked list operations in C, showcasing deep understanding of data structures. Key features include insertion, deletion, and traversal functions, each optimized for performance and memory usage. The project demonstrates my ability to implement core algorithms and manage pointers effectively, essential skills in system-level programming.
-							<div class="intro-btns">
-								<a href="https://github.com/brodynelly/data-structure-basics/tree/main/Linked%20List%20Function" class="btn-dark mx-1" id="projects-btn"
+							<div class="link-btns">
+								<a href="https://github.com/brodynelly/data-structure-basics/tree/main/Linked%20List%20Function" class="btn-light mx-1" id="projects-btn"
 								  target="_blank"><i class="fa fa-github"></i> Github</a>
 							</div>
 					</p>
 					</div>
+
+					<div class="project-right">
+						<img src="assets/img/Linkedlist.png" alt="" class="img">
+					</div>
 				</div>
 				<div class="project-row">
-					<div class="project-left">
-						<img src="assets/img/strings.png" alt="">
-					</div>
-					<div class="project-right"> 
+					
+					<div class="project-left"> 
 					
 						<h2><b>Advanced String Utility Toolkit in C</b></h2>
 
@@ -168,10 +172,14 @@
 
 						<p>This project showcases a suite of string utility functions in C, demonstrating proficiency in low-level programming and string manipulation. It includes dynamic string duplication, efficient concatenation, case-insensitive comparison, and robust tokenization. Emphasizing memory-safe operations, the toolkit highlights my ability to write secure, reliable, and efficient code, suitable for various applications.</p>
 						
-						<div class="intro-btns">
-							<a href="https://github.com/brodynelly/data-structure-basics/tree/main/String%20Utility%20Functions" class="btn-dark mx-1" id="projects-btn"
+						<div class="link-btns">
+							<a href="https://github.com/brodynelly/data-structure-basics/tree/main/String%20Utility%20Functions" class="btn-light mx-1" id="projects-btn"
 					  		target="_blank"><i class="fa fa-github"></i> Github</a>
 						</div>
+					</div>
+
+					<div class="project-right">
+						<img src="assets/img/strings.png" alt="" class="img">
 					</div>
 				</div>
 				
@@ -179,8 +187,9 @@
 				
 			</div>
 		</section>
+		
 
-		<!-- Timeline --> 
+	<!-----
 		<section id="timeline" class="section section-2">
 			<div class="has-text-centered">
 				<h3 class="title is-3">Timeline</h3>
@@ -218,12 +227,13 @@
 			</div>
 		</section>
 
+		*/
 		
-		
-		<!-- Footer -->
+		 Footer -->
 		<section class="section-4 has-text-centered container">
 			<p>Contact: brody2003@icloud.com</p>
 		</section>
+		
 		
 		<!-- Scripts  -->
 		<script src="controller.js"></script>		
